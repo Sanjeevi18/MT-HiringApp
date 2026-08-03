@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hiring_app/modules/employer/onboarding/employer_onboarding_binding.dart';
 import 'package:hiring_app/modules/employer/onboarding/employer_onboarding_view.dart';
+import 'package:hiring_app/modules/recruiter/onboarding/recruiter_onboarding_binding.dart';
+import 'package:hiring_app/modules/recruiter/onboarding/recruiter_onboarding_view.dart';
 import 'app_routes.dart';
 
 // Splash
@@ -72,6 +74,12 @@ class AppPages {
       name: AppRoutes.EMPLOYER_ONBOARDING,
       page: () => const EmployerOnboardingView(),
       binding: EmployerOnboardingBinding(),
+    ),
+
+    GetPage(
+      name: AppRoutes.RECRUITER_ONBOARDING,
+      page: () => const RecruiterOnboardingView(),
+      binding: RecruiterOnboardingBinding(),
     ),
     GetPage(
       name: AppRoutes.ADMIN_DASHBOARD,

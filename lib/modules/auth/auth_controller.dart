@@ -77,8 +77,10 @@ class AuthController extends GetxController {
     } else if (selectedRole.value == 'Job Seeker') {
       Get.offAllNamed(AppRoutes.JOB_SEEKER_ONBOARDING,
           arguments: {'role': 'Job Seeker'});
+    } else if (selectedRole.value == 'Recruiter') {
+      Get.offAllNamed(AppRoutes.RECRUITER_ONBOARDING,
+          arguments: {'role': 'Recruiter'});
     } else {
-      // Temporary fallback for Recruiter until that module is built
       Get.offAllNamed(AppRoutes.ADMIN_DASHBOARD);
     }
   }

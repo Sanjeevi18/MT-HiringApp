@@ -10,6 +10,10 @@ abstract class AppRoutes {
   // Employer Routes
   static const EMPLOYER_DASHBOARD = '/employer/dashboard';
   static const EMPLOYER_ONBOARDING = '/employer/onboarding';
+
+  // Recruiter Routes
+  static const RECRUITER_ONBOARDING = '/recruiter/onboarding';
+
   // Admin Routes
   static const ADMIN_DASHBOARD = '/admin/dashboard';
 }
